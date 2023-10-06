@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacabambaspis</title>
+    <style>
+        * {
+            --gray: rgb(187, 187, 187);
+            --white: rgb(250, 250, 250);
+            --black: rgb(2, 2, 2);
+            --orange: rgb(255, 143, 14);
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .top {
+            background-color: var(--gray);
+            height: 50%;
+        }
+
+        .bottom {
+            background-color: var(--white);
+            height: 50%;
+        }
+
+        .face {
+            position: relative;
+            float: left;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 61.8%;
+            height: 12vw;
+        }
+
+        .eye {
+            width: 10vw;
+            height: 10vw;
+            background-color: var(--white);
+            border: 1vw solid var(--black);
+            border-radius: 50%;
+        }
+
+        .pupil {
+            margin: 1vw;
+            width: 8vw;
+            height: 8vw;
+            background-color: var(--black);
+            border-radius: 50%;
+        }
+
+        .eye.left {
+            float: left;
+        }
+
+        .eye.right {
+            float: right;
+        }
+
+        .mouth {
+            position: relative;
+            width: 0;
+            height: 0;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50.5%);
+            border: 8vw solid transparent;
+            border-top: 4vw solid var(--black);
+        }
+
+        .nose {
+            position: absolute;
+            width: 16vw;
+            height: 1vw;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .nostril {
+            width: 1vw;
+            height: 1vw;
+            background-color: var(--black);
+        }
+
+        .nostril.left {
+            float: left;
+        }
+
+        .nostril.right {
+            float: right;
+        }
+
+        .footer {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: var(--orange);
+            position: absolute;
+            bottom: 1%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="face">
+        <div class="eye left">
+            <div class="pupil"></div>
+        </div>
+        <div class="eye right">
+            <div class="pupil"></div>
+        </div>
+        <div class="mouth"></div>
+        <div class="nose">
+            <div class="nostril left"></div>
+            <div class="nostril right"></div>
+        </div>
+    </div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <span class="footer">Copyright © 2023-2123 HanaYabuki -> <a href="https://github.com/HanaYabuki/sacabambaspis">@github</a> | <a href="https://space.bilibili.com/496956009">@bilibili</a></span>
+</body>
+
+</html>
